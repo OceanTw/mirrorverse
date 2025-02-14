@@ -1,0 +1,5 @@
+name: Mirrorverse
+main: dev.ocean.mirrorverse.Mirrorverse
+version: 1.0
+commands:
+  setup:

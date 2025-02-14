@@ -1,4 +1,4 @@
-package lol.oce.marine.configs.impl.handler;
+package dev.ocean.mirrorverse.configs.impl.handler;
 
 public enum DataType {
     BOOLEAN,

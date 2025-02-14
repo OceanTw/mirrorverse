@@ -1,14 +1,13 @@
-package lol.oce.marine.configs.impl.handler;
+package dev.ocean.mirrorverse.configs.impl.handler;
 
-import lol.oce.marine.Practice;
-import lol.oce.marine.utils.ConfigFile;
+import dev.ocean.mirrorverse.Mirrorverse;
+import dev.ocean.mirrorverse.utils.ConfigFile;
 
-import java.util.Collections;
 import java.util.List;
 
 public interface IDataAccessor {
 
-    Practice plugin = Practice.getInstance();
+    Mirrorverse plugin = Mirrorverse.getInstance();
 
     default String getString() {
         return getConfigFile().getConfiguration().getString(getPath());

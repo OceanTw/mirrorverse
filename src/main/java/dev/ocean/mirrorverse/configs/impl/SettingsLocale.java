@@ -1,15 +1,11 @@
-package lol.oce.marine.configs.impl;
+package dev.ocean.mirrorverse.configs.impl;
 
-import lol.oce.marine.configs.ConfigService;
-import lol.oce.marine.configs.impl.handler.DataType;
-import lol.oce.marine.configs.impl.handler.IDataAccessor;
-import lol.oce.marine.utils.ConfigFile;
-import lol.oce.marine.utils.LocationUtils;
+import dev.ocean.mirrorverse.configs.ConfigService;
+import dev.ocean.mirrorverse.configs.impl.handler.DataType;
+import dev.ocean.mirrorverse.configs.impl.handler.IDataAccessor;
+import dev.ocean.mirrorverse.utils.ConfigFile;
 import lombok.Getter;
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
 
-import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +14,6 @@ import java.util.List;
 public enum SettingsLocale implements IDataAccessor {
     DEBUG("debug", DataType.BOOLEAN, "false"),
     MONGO("mongo-url", DataType.STRING, "mongodb://localhost:27017"),
-    LOBBY_LOCATION("lobby-location", DataType.STRING, LocationUtils.serialize(new Location(Bukkit.getWorld("world"), 0, 100, 0, 0, 0)))
     ;
 
     private final String path;

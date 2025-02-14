@@ -1,11 +1,15 @@
-package dev.ocean.mirrorverse.regions;
+package dev.ocean.mirrorverse.mirrors;
+
+import lombok.Getter;
 
 import java.util.List;
 
-public class RegionManager {
-    List<Region> regions;
+@Getter
+public class MirrorManager {
+    List<Mirror> mirrors;
 
-    public void addRegion(Region region) {
-        regions.add(region);
+    public void addMirror(Mirror region) {
+        mirrors.add(region);
     }
+
 }

@@ -1,4 +1,9 @@
 package dev.ocean.mirrorverse.mirrors;
 
-public class MirrorType {
+public enum MirrorType {
+    BASIC,
+    NORMAL,
+    // TODO: Below
+    INVERTED,
+    CUSTOM
 }
